@@ -12,16 +12,7 @@ namespace Neighbour
         public App()
         {
             InitializeComponent();
-
-            if (UseMockDataStore)
-                DependencyService.Register<MockDataStore>();
-            else
-                DependencyService.Register<CloudDataStore>();
-
-            if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new MainPage();
-            else
-                MainPage = new NavigationPage(new MainPage());
+            MainPage = new Neighbour.Views.Menu.MainPage();
         }
     }
 }
