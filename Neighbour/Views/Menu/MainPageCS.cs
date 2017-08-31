@@ -17,11 +17,11 @@ namespace Neighbour.Views.Menu
 
 			masterPage.ListView.ItemSelected += OnItemSelected;
 
-			if (Device.RuntimePlatform == Device.Windows)
-			{
-				MasterBehavior = MasterBehavior.Popover;
-			}
-		}
+            //if (Device.RuntimePlatform == Device.Windows)
+            //{
+            //    MasterBehavior = MasterBehavior.Popover;
+            //}
+        }
 
 		void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
 		{

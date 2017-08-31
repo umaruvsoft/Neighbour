@@ -13,17 +13,17 @@ namespace Neighbour.Views.Menu
 		{
 			InitializeComponent();
 
-			myMmasterPage = new MasterPage();
-			Master = myMmasterPage;
-			Detail = new NavigationPage(new NewsFeedPage());
+			//myMmasterPage = new MasterPage();
+			//Master = myMmasterPage;
+			//Detail = new NavigationPage(new NewsFeedPage());
 
-			myMmasterPage.ListView.ItemSelected += OnItemSelected;
+			//myMmasterPage.ListView.ItemSelected += OnItemSelected;
 
-			if (Device.RuntimePlatform == Device.Windows)
-			{
-				MasterBehavior = MasterBehavior.Popover;
-			}
-		}
+            //if (Device.RuntimePlatform == Device.Windows)
+            //{
+            //    MasterBehavior = MasterBehavior.Popover;
+            //}
+        }
 
 		void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
 		{

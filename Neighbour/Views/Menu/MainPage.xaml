@@ -2,15 +2,18 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
                   xmlns:local="clr-namespace:Neighbour.Views.Menu;assembly=Neighbour.Views.Menu"
-                  x:Class="Neighbour.Views.Menu.MainPage">
-  <!--<MasterDetailPage.Master>
+                  x:Class="Neighbour.Views.Menu.MainPage"
+                  Title="masterdetailpage">
+  <MasterDetailPage.Master>
     <local:MasterPage x:Name="masterPage" />
   </MasterDetailPage.Master>
+    
+    
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <local:ContactsPage />
+                <local:NewsFeedPage/>
             </x:Arguments>
         </NavigationPage>
-    </MasterDetailPage.Detail>-->
+    </MasterDetailPage.Detail>
 </MasterDetailPage>
